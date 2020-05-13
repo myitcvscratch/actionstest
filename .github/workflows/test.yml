@@ -15,7 +15,7 @@ jobs:
     - name: Write secret to a file
       run: echo "${{ secrets.blah }}" > test
     - name: Diff
-      run: diff -wu README test
+      run: diff -u README test
     strategy:
       matrix:
         os:
